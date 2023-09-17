@@ -1,11 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  let!(:user) { create(:user) }
   context "when the creation of an User is successful" do
     it 'checks if a user is created' do
-      user = FactoryBot.build(:user)
       expect(user).to be_valid
     end
+
+    it { should validate_presence_of(:name) }
+    it { should validate_presence_of(:email) }
   end
 
   context "when the creation of an User fails" do

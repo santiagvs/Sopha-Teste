@@ -50,3 +50,5 @@ gem "solargraph", "~> 0.49.0", :groups => [:development, :test]
 gem "factory_bot_rails", "~> 6.2", :groups => [:development, :test]
 
 gem "faker", "~> 3.2", :groups => [:development, :test]
+
+gem "shoulda-matchers", "~> 4.5", :group => :test
