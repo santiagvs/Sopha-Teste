@@ -50,14 +50,14 @@ As seguintes requisições devem ser possíveis:
 
 ## O que esperamos da solução
 
-- [] A aplicacão **DEVE** estar hospedada em uma instância **AWS EC2**
+- A aplicacão **DEVE** estar hospedada em uma instância **AWS EC2**
 - [x] Que todas as ações requisitadas funcionem.
 - [x] Que haja testes automatizados sobre essas ações (TDD).
 - [x] Que seja possível testar essas ações do ambiente local (Localhost) na **aplicação hospedada**.
-- [] Instruções de uso no README.md
-  - [] Como rodar os testes da aplicação
-  - [] Quais os **endpoints** devo acessar para realizar as requisições esperadas na **aplicação hospedada**
-  - [] Quais os **parâmetros** e/ou **cabeçalhos**  devo enviar para realizar cada uma das requisições esperadas na **aplicação hospedada**
+- Instruções de uso no README.md
+- Como rodar os testes da aplicação
+- Quais os **endpoints** devo acessar para realizar as requisições esperadas na **aplicação hospedada**
+- Quais os **parâmetros** e/ou **cabeçalhos**  devo enviar para realizar cada uma das requisições esperadas na **aplicação hospedada**
 - [x] É **Opcional** utilizar **docker** na **aplicação hospedada**.
 - [x] Uso de **gems** adicionais também é opcional
 
