@@ -33,6 +33,8 @@ A aplicação no ar, subida na AWS EC2, se encontra nesta URL:
 
 ### No local
 
+Lembre de criar o arquivo `.env` antes de rodar o Docker.
+
 Execute o comando para provisionar a aplicação:
 
     docker-compose up --build
