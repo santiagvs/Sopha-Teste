@@ -6,7 +6,7 @@ RSpec.describe StoresController, type: :controller do
   let(:invalid_attributes) { { name: '' } }
 
   before do
-    sign_in user # Assuming you have a method for signing in users in your tests
+    sign_in user
   end
 
   describe 'POST #create' do
