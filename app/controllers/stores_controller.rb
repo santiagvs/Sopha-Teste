@@ -1,19 +1,17 @@
 class StoresController < ApplicationController
   before_action :set_store, only: [:show, :update, :destroy]
   before_action :authenticate_user!
-  # GET /stores
+
   def index
     @stores = Store.all
 
     render json: @stores
   end
 
-  # GET /stores/1
   def show
     render json: @store
   end
 
-  # POST /stores
   def create
     @store = Store.new(store_params)
 
@@ -24,7 +22,6 @@ class StoresController < ApplicationController
     end
   end
 
-  # PATCH/PUT /stores/1
   def update
     if @store.update(store_params)
       render json: @store
@@ -33,18 +30,16 @@ class StoresController < ApplicationController
     end
   end
 
-  # DELETE /stores/1
   def destroy
     @store.destroy
+    render json: { message: "Store deleted successfully" }, status: :ok
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_store
       @store = Store.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
     def store_params
       params.require(:store).permit(:name, :user_id)
     end
