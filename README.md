@@ -45,6 +45,10 @@ Criar e migrar o banco:
 
     rails db:create && rails db:migrate
 
+Criar a chave, dentro do ambiente Docker, a fim de preencher a env `DEVISE_JWT_SECRET` do repositório no arquivo `.env`:
+
+    bundle exec rake secret
+
 Executar os testes sem warnings e com os respectivos nomes e descrições de cada spec:
 
     RUBYOPT='-W0' rspec -fd
