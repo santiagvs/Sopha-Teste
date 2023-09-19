@@ -25,7 +25,7 @@ A API é constituída por:
 
 A aplicação no ar, subida na AWS EC2, se encontra nesta URL:
 
-    rails-webapp-366100457.sa-east-1.elb.amazonaws.com
+    http://rails-webapp-366100457.sa-east-1.elb.amazonaws.com
 
 **Lembrete:** consultar os endpoints abaixo para que as requisições sejam feitas corretamente.
 
@@ -67,6 +67,8 @@ Na mesma requisição, o envio do token Bearer na resposta:
 
 ![Token de autorização](https://i.imgur.com/zCj6v4y.png)
 
+> No caso do preenchimento da aba "Auth" com a opção "Bearer" não funcionar, pode-se passar o token como um header de chave `Authorization` e o valor como `Bearer <token>`.
+
 ## Endpoints
 
 | Nome da Rota            | Ação          | Endpoint               | Descrição                                    |
@@ -79,6 +81,8 @@ Na mesma requisição, o envio do token Bearer na resposta:
 | Criar loja              | POST          | /stores                | Cria uma nova loja                           |
 | Editar loja             | PUT/PATCH     | /stores/:id            | Atualiza uma loja existente pelo ID          |
 | Deletar loja            | DELETE        | /stores/:id            | Exclui uma loja pelo ID                      |
+
+> No caso da rota de **/logout**, lembrar de passar o token JWT na requisição. Depois testar, com o mesmo token, os endpoints de **Store** para que se retorne a mensagem de token revogado.
 
 ## Retornos
 
