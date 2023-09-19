@@ -82,7 +82,7 @@ Na mesma requisição, o envio do token Bearer na resposta:
 
 | Rota              | Método | Descrição                          | Respostas bem-sucedidas |
 |-------------------|--------|------------------------------------|-------------------------|
-| /users            | POST   | Criar um novo usuário              | 200 OK                  |
+| /signup           | POST   | Criar um novo usuário              | 200 OK                  |
 | /login            | POST   | Realizar o login do usuário        | 200 OK                  |
 | /logout           | DELETE | Realizar o logout do usuário       | 200 OK                  |
 | /stores           | GET    | Consultar todas as lojas           | 200 OK                  |
